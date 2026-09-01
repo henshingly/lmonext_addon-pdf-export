@@ -7,7 +7,7 @@
         "en": "PDF export for results, standings, schedule and team comparison (head-to-head) - a fully self-contained, custom-built PDF engine without any external library. After activation, Administrator → Settings → Options → Display shows the option to let visitors see the PDF buttons."
     },
     "author": "Dietmar Kersting, Torsten Hofmann",
-    "homepage": "",
+    "homepage": "https://github.com/henshingly/lmonext_addon-pdf-export",
     "license": "GPL-3.0-only",
     "min_core_version": "1.9.2",
     "type": "frontend",
