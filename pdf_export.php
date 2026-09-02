@@ -2,7 +2,7 @@
 /**
  * Project: LMOnext
  * Filename: addon/pdf-export/pdf_export.php
- * Fileversion: 1.9.2
+ * Fileversion: 1.10.0
  *
  * @author    Dietmar Kersting <webmaster@liga-manager-online.org>
  * @author    Torsten Hofmann <entwickler@bastel-code.de>
@@ -19,6 +19,17 @@
 declare(strict_types = 1);
 
 require_once __DIR__ . '/PdfExporter.php';
+
+// Eigene Sprachdateien laden (addon/pdf-export/lang/de.php + en.php) - siehe
+// dortiger Docblock: Schlüssel, die ausschließlich von diesem Addon genutzt
+// werden, wurden aus lang/frontend/*.php hierher verschoben. loadLanguages()
+// wird NICHT automatisch aufgerufen (anders als bei über frontend_handlers
+// geladenen Addons) - dieses Addon lädt bewusst NICHT über
+// AddonManager::bootFrontend() (siehe Docblock oben zur Performance-
+// Entscheidung), daher expliziter Aufruf genau hier.
+if (function_exists('addonManager')) {
+    \addonManager()->loadLanguages('pdf-export');
+}
 
 use LMOnext\Pdf\PdfExporter;
 

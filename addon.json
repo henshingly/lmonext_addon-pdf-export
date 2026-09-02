@@ -1,18 +1,18 @@
 {
     "name": "pdf-export",
     "display_name": "PDF-Export",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": {
         "de": "PDF-Export für Ergebnisse, Tabelle, Spielplan und Teamvergleich (Direkter Vergleich) - eine vollständig eigenständige, selbstgeschriebene PDF-Engine ohne externe Bibliothek. Nach der Aktivierung erscheint in Administrator → Einstellungen → Optionen → Anzeigen/Darstellung die Option, ob Besucher die PDF-Buttons sehen.",
         "en": "PDF export for results, standings, schedule and team comparison (head-to-head) - a fully self-contained, custom-built PDF engine without any external library. After activation, Administrator → Settings → Options → Display shows the option to let visitors see the PDF buttons."
     },
     "author": "Dietmar Kersting, Torsten Hofmann",
-    "homepage": "https://github.com/henshingly/lmonext_addon-pdf-export",
+    "homepage": "",
     "license": "GPL-3.0-only",
-    "min_core_version": "1.9.2-beta",
+    "min_core_version": "1.9.2",
     "type": "frontend",
     "icon": "📄",
-    "lang_dir": "",
+    "lang_dir": "lang/",
     "frontend_handlers": [],
     "db_tables": [],
     "dependencies": []

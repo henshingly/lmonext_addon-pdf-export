@@ -4,9 +4,14 @@ Vollständige, selbstgeschriebene PDF-Export-Engine für Ergebnisse, Tabelle,
 Spielplan und Teamvergleich (Direkter Vergleich) - ohne externe Bibliothek.
 
 Stammt aus dem LMOnext-Core (vorher src/Pdf/PdfExporter.php +
-frontend/pdf_export.php) und wurde als eigenständiges Addon ausgegliedert,
-damit es installationsweit über Administrator → Einstellungen → Optionen
-→ Anzeigen/Darstellung sichtbar aktiviert/deaktiviert werden kann.
+frontend/pdf_export.php) und wurde als eigenständiges Addon ausgegliedert
+(Beitrag: Nutzerwunsch), damit es installationsweit über Administrator →
+Einstellungen → Optionen → Anzeigen/Darstellung sichtbar aktiviert/
+deaktiviert werden kann.
+
+## Version 1.1.0
+
+- Eigene Sprachdateien ergänzt (addon/pdf-export/lang/de.php + en.php). Bei genauerer Prüfung waren 3 der zuvor als "geteilt" eingestuften Sprachschlüssel doch addon-exklusiv (keine echte Verwendung außerhalb dieses Addons): liga_col_nr, liga_pdf_footer, h2h_pdf_renamed_note - aus lang/frontend/*.php verschoben (siehe dortiger Core-Changelog-Eintrag 1.49.0). pdf_export.php ruft jetzt beim Laden explizit addonManager()->loadLanguages('pdf-export') auf, da dieses Addon bewusst NICHT über frontend_handlers/bootFrontend() geladen wird (siehe Version 1.0.0 unten) und loadLanguages() sonst nie automatisch aufgerufen würde.
 
 ## Version 1.0.0
 
