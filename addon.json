@@ -9,7 +9,7 @@
     "author": "Dietmar Kersting, Torsten Hofmann",
     "homepage": "https://github.com/henshingly/lmonext_addon-pdf-export",
     "license": "GPL-3.0-only",
-    "min_core_version": "1.9.2",
+    "min_core_version": "1.9.2-beta",
     "type": "frontend",
     "icon": "📄",
     "lang_dir": "lang/",
